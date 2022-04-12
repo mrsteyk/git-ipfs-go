@@ -88,9 +88,6 @@ func main() {
 	// IPFS api
 	api := ipfs.NewLocalShell()
 
-	data_dagpb_empty, err := api.BlockGet("bafybeiczsscdsbs7ffqz55asqdf3smv6klcw3gofszvwlyarci47bgf354")
-	os.WriteFile("1", data_dagpb_empty, 0777)
-
 	// Push objects...
 	hash := localRef.Hash().String()
 
